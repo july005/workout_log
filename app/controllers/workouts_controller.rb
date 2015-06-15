@@ -20,7 +20,15 @@ class WorkoutsController < ApplicationController
 		end
 	end
 
-	def edit
+	def print_strftime_formats(a,cur_date)
+   a.each do |format|
+   b = "%#{format}"
+   output = cur_date.strftime(b)
+   puts "t.strftime('#{b}'), => #{output}"
+   end
+	end
+
+def edit
 	end
 
 	def update
