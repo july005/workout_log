@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div id="workout">
+    <p>
+      <strong>Date:</strong> <%= @workout.date %>
+    </p>
+    <p>
+      <strong>Workout:</strong> <%= @workout.workout %>
+    </p>
+    <p>
+     <strong>Mood:</strong> <%= @workout.mood %>
+    </p>
+    <p>
+      <strong>Length:</strong> <%= @workout.length %>
+    </p>
+  </div>
+  <div id="exercises">
+    <h2>Exercises</h2>
+    <%= render@workout.exercises %>
+    <%= render "exercises/form" %>
+  </div>
+  <%= link_to "Back", root_path %>
+  |
+  <%= link_to "Edit", edit_workout_path(@workout) %>
+  |
+  <%= link_to "Delete", workout_path(@workout), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>

@@ -16,13 +16,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Orbitron:900);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
 body {
 	height: 100%;
   background-image: url("background2.jpg");
-  background-size: 100%;
+  background-size: 110%;
   background-position: top;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -31,32 +32,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+#new-workout {
+  line-height: 0;
+  color: #8B0000;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+	background: white;
+	padding: 20px;
 }
 
-#bootstrap-overrides h1 { 
-  line-height: 3;
-  color: #8B0000;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 150px;
-  text-align: center-left;
+#bootstrap-overrides h1 {
+	line-height: 9.14;
+	color: #8B0000;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 150px;
+	text-align: center;
 	font-weight: bold;
-}
-#bootstrap-overrides-low h1 { 
-  line-height: 0;
-  color: #FF6600;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 150px;
-  text-align: right;
-	font-weight: bold;
+
 }
 
 .home {
-  font-color: black;
+  font-color: white;
 }
+
+.btn-default {
+	background-color: black;
+	color: white;
+}
+
 
 nav {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);

@@ -1,0 +1,10 @@
+<div id="new-workout">
+  <% @workouts.each do |workout| %>
+    <h1>
+      <%= link_to workout.date.strftime("%A %B %d"), workout %>
+    </h1>
+    <h3>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= workout.workout %>
+    </h3>
+  <% end %>
+</div>
